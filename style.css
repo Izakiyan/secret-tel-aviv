@@ -8,6 +8,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	top: 0;	
+	z-index: 1;
 }
 
 nav ul {
@@ -42,11 +43,6 @@ nav li a {
 	display: block;
 	margin: 0 auto;
 	padding-top: 250px;
-	position: relative;
-}
-
-li:first-child {
-	color: green;
 }
 
 h1 {
@@ -79,4 +75,24 @@ section {
 }
 .column-inner {
 	padding: 20px;
+}
+
+@media (max-width: 700px) {
+  .column {
+  		width: 100%;
+  	}
+}
+
+.column-70 {
+  width: 70%;
+  float: left;
+  height: 500px;
+  background-color: red;
+}
+
+.column-30 {
+  width: 30%;
+  float: left;
+  height: 500px;
+  background-color: blue;
 }
